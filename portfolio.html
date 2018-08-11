@@ -5,83 +5,134 @@
     <meta charset="utf-8" />
     <title>Mateus Koehler Bio</title>
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <!-- JQuery Easing CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
+    <!-- Mateus Style -->
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <!-- Mateus Javascript -->
+    <script type="text/javascript" src="assets/javascript/javascript.js"></script>
 </head>
 
-<body class="bg">
+<body>
 
-    <!-- Main header -->
-    <div class="row bg-white">
-        <!-- blank sidebar space -->
-        <div class="col-2"></div>
-        <!--  -->
-        <div class="col-8">
-            <nav class="navbar">
-                <h1 class="name">Mateus Koehler</h1>
-                <!-- Links to other pages under my domain-->
-                <ul class="navbar">
-                    <li class="about">
-                        <a href="index.html">About</a>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
-                    <li class="portfolio">
-                        <a href="portfolio.html">Portfolio</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Projects
+                            <span class="sr-only">(current)</span>
+                        </a>
                     </li>
-                    <li class="contact">
-                        <a href="contact.html">Contact</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
-            </nav>
+                <a class="mx-1" href="https://github.com/tleytek">
+                    <img src="assets/images/GitHub-Mark/GitHub-Mark-32px.png" alt="Github">
+                </a>
+                <a class="mx-1" href="contact.html">
+                    <img src="assets/images/contact-icon.png" alt="Github">
+                </a>
+            </div>
         </div>
-        <div class="col-2"></div>
-    </div>
+    </nav>
+    <div class="view hm-black-light jarallax" data-jarallax='{"speed": 0.2}'>
+        <div class="full-bg-img black-transparent">
+            <div class="container flex-center">
+                <div class="row pt-5 mt-3">
+                    <div class="col-md-12">
+                        <div class="text-center">
+                            <h1 class="h1-reponsive white-text text-uppercase mb-3 wow fadeInDown display-1" data-wow-delay="0.3s">
+                                Projects
+                            </h1>
 
-    <!-- About Me section with header, image, and text -->
-    <div class="main-content">
+                            <div class="card-deck mb-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="assets/images/photo1.jfif" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                                            content. This content is a little bit longer.</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="assets/images/photo1.jfif" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="assets/images/photo1.jfif" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                                            content. This card has even longer content than the first to show that equal
+                                            height action.</p>
 
-        <!-- Header -->
-        <h1 class="main-content-header">
-            <strong>Portfolio</strong>
-        </h1>
+                                    </div>
+                                </div>
+                            </div>
 
-        <!-- Image grid -->
-        <div class="image-grid">
+                            <div class="card-deck">
+                                <div class="card">
+                                    <img class="card-img-top" src="assets/images/photo1.jfif" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                                            content. This content is a little bit longer.</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="assets/images/photo1.jfif" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="assets/images/photo1.jfif" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                                            content. This card has even longer content than the first to show that equal
+                                            height action.</p>
 
-            <div class="grid-container-1">
-                <a href="#" class="portfolio-textblock">Hangman</a>
-                <img class="portfolio-image-1" src="assets/images/photo1.jfif" alt="photo1">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="grid-container-2">
-                <a href="#" class="portfolio-textblock">Trivia Game</a>
-                <img class="portfolio-image-2" src="assets/images/photo2.jfif" alt="photo2">
-            </div>
-
-            <div class="grid-container-3">
-                <a href="#" class="portfolio-textblock">Rock Paper Scissors</a>
-                <img class="portfolio-image-3" src="assets/images/photo3.jfif" alt="photo3">
-            </div>
-
-            <div class="grid-container-4">
-                <a href="#" class="portfolio-textblock">RPG Game</a>
-                <img class="portfolio-image-4" src="assets/images/photo4.jfif" alt="photo4">
-            </div>
-
-            <div class="grid-container-5">
-                <a href="#" class="portfolio-textblock">Rutgers Info Widget</a>
-                <img class="portfolio-image-5" src="assets/images/photo5.jfif" alt="photo5">
-            </div>
-
         </div>
     </div>
-
-    <div class="footer-push"></div>
-    <footer class="portfolio-footer">
-
-        <p class="footer-text ">Copyright ©</p>
-
-    </footer>
 
 </body>
 
