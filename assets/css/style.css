@@ -8,11 +8,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+*/
 .profile-img {
-  width: 250px;
-  height: auto;
-} */
+  width: auto;
+  height: 300px;
+}
 
 .black-transparent {
   background: rgba(0, 0, 0, 0.322);
