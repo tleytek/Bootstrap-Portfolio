@@ -1,44 +1,63 @@
-/* * {
-  box-sizing: border-box;
-}
-.bg {
-  background-image: url("../images/dactyl-manuform-2.jpg");
+html, header, body {
   height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-*/
-.profile-img {
-  width: auto;
-  height: 300px;
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.top-nav-collapse {
+  background-color: #78909c;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .black-transparent {
-  background: rgba(0, 0, 0, 0.322);
+  background: rgba(0, 0, 0, 0.255);
   overflow: hidden;
   height: 100%;
   z-index: 2;
 }
 
-.top-nav-collapse {
-  background-color: #78909c !important;
-}
-.navbar:not(.top-nav-collapse) {
-  background: transparent !important;
-}
-@media (max-width: 768px) {
-  .navbar:not(.top-nav-collapse) {
-    background: #78909c !important;
-  }
-}
 h1 {
   letter-spacing: 8px;
 }
+
 h5 {
   letter-spacing: 3px;
 }
+
 .hr-light {
   border-top: 3px solid #fff;
   width: 80px;
 }
+
+.background-image {
+  background: url(../images/dactyl-manuform-2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+header {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+.skills {
+  list-style-type: disc;
+}
+
+img {
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=style.css.map */

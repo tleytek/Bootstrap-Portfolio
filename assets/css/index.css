@@ -1,0 +1,8 @@
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+.full-bg-img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
