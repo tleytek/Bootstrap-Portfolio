@@ -1,8 +1,69 @@
-.navbar:not(.top-nav-collapse) {
-  background: transparent !important;
+html {
+  scroll-behavior: smooth;
 }
-.full-bg-img {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.nav-grid {
+  display: grid;
+  list-style: none;
+  grid-template-columns: 1fr repeat(3, 15%) 1fr;
+  justify-items: center;
+  background-color: #5dcbe7c4;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+li:nth-child(1) {
+  grid-column-start: 2;
+}
+li:nth-child(4) {
+  margin-left: auto;
+}
+
+/* style for all list item EXCEPT icons */
+.nav-item {
+  width: 100%;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: white;
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-link:hover {
+  color: inherit;
+  border-bottom: 3px solid rgb(99, 149, 241);
+}
+
+.active {
+  border-bottom: 3px solid rgb(99, 149, 241);
+}
+
+.icon {
+  color: inherit;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+.icon:hover {
+  color: black;
+}
+
+#about {
+  height: 100vh;
+  background-color: rgb(201, 235, 230);
+}
+#projects {
+  height: 100vh;
+  background: linear-gradient(45deg, #43cea2 10%, #185a9d 90%);
+}
+#contact {
+  height: 100vh;
 }
