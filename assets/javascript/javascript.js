@@ -1,9 +1,10 @@
 $(document).ready(function() {
   $(document).on("scroll", onScroll);
-
+  // document.addEventListener("scroll", onScroll);
+  let scrolling = true;
   // Trigger Click to go specific section or add active
-  $('a[href^="#"]').on("click", function(e) {
-    $(document).off("scroll");
+  $('nav li a[href^="#"]').on("click", function(e) {
+    // $(document).off("scroll");
 
     $("a").each(function() {
       $(this).removeClass("active");
@@ -21,7 +22,6 @@ function onScroll(event) {
       refElement.position().top <= scrollPosition &&
       refElement.position().top + refElement.height() > scrollPosition
     ) {
-      $("nav a").removeClass("active");
       currentLink.addClass("active");
     } else {
       currentLink.removeClass("active");

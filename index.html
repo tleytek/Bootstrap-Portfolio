@@ -10,6 +10,11 @@
       media="screen"
       href="assets/css/reset.css"
     />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap"
+      rel="stylesheet"
+    />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -19,10 +24,11 @@
     />
     <!-- Bootstrap JQuery -->
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
     <!-- Bootstrap Popper -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -53,7 +59,10 @@
     <!--Navbar-->
     <nav class="nav-grid">
       <li class="nav-item">
-        <a class="nav-link active" href="#about">About</a>
+        <a class="nav-link active" href="#home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#projects">Projects</a>
@@ -63,7 +72,12 @@
       </li>
       <li>
         <a class="icon" href="https://tleytek.github.io/" target="_blank"
-          ><i class="fab fa-github "></i
+          ><i
+            class="fab fa-github "
+            data-toggle="tooltip"
+            data-placement="top"
+            title="Tooltip on top"
+          ></i
         ></a>
         <a
           class="icon"
@@ -76,8 +90,141 @@
 
     <!-- Main -->
     <main>
-      <div id="about"></div>
-      <div id="projects"></div>
+      <div id="home">
+        <h1>
+          Mateus Koehler
+        </h1>
+        <h2>
+          Full Stack Web Developer
+        </h2>
+        <div
+          id="carousel"
+          class="carousel slide my-auto"
+          data-ride="carousel"
+          data-interval="7000"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-flex align-items-center justify-content-center">
+                <p class="m-0 font-italic carousel-text">
+                  "Act like it matters." -
+                  <a href="https://www.youtube.com/watch?v=lmjVKxPDR_M"
+                    >Louis Rossman</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex align-items-center justify-content-center">
+                <p class="m-0 font-italic carousel-text">
+                  "Act like it matters." -
+                  <a href="https://www.youtube.com/watch?v=lmjVKxPDR_M"
+                    >Louis Rossman</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex align-items-center justify-content-center">
+                <p class="m-0 font-italic carousel-text">
+                  "Act like it matters." -
+                  <a href="https://www.youtube.com/watch?v=lmjVKxPDR_M"
+                    >Louis Rossman</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carousel"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carousel"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <div id="about">
+        <img src="./assets/images/Mateus_Transparent.png" alt="headshot" />
+        <div>
+          <h2>Who am I?</h2>
+          <p>
+            I am a Full Stack Developer whose proficient in the M.E.R.N. tech
+            stack, and always eager to learn more.
+          </p>
+          <h2>Why Software Development?</h2>
+          <p>
+            I initially pursued a career in Electrical Engineering and graduated
+            from Durham College with a diploma. I chose this path because I
+            found myself fascinated with the Arduino Uno, a healthy mixture of
+            software development and electronics. The course advertised itself
+            as such but took a turn for the worst as the later half of the
+            program taught mechanical engineering. Dissapointed that my program
+            did not provide me with the skills I needed, I worked as a delivery
+            driver for a few years. During this time I was always thinking what
+            I wanted to do for a career. I had to look within and ask myself
+            everyday "What do I like to do?". In my spare time I would enjoy
+            tinkering with other peoples software for 3D printers, keyboard
+            designs in Clojure, and Scripts for automating tasks. I felt as
+            though I enjoyed working with software more than anything, but I had
+            to make sure it wasn't just a phase. So I kept working as a delivery
+            driver until I could confirm with myself that software development
+            is what I wanted to do. Lo and behold, I chose to pursue Software
+            Development.
+          </p>
+          <h2>Why Web Development?</h2>
+          <p>
+            My reasons for pursuing Web Development are quite vapid, but that
+            doesn't mean I don't enjoy every moment learning about it. I told
+            myself that I wanted to make software that could help the largest
+            amount of people, within my capabilities. Out of all the options for
+            education, UTM's Full Stack Web Developer Bootcamp was perfect for
+            it's schedule and location.
+          </p>
+        </div>
+      </div>
+      <div id="projects">
+        <div class="card-group">
+          <!-- Card 1 -->
+          <div class="card bg-dark text-white">
+            <img src="./assets/images/Albion-Tools.png" class="card-img" />
+            <a class="card-img-overlay">
+              <h5 class="card-title">Albion Tools</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text">Last updated 3 mins ago</p>
+            </a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card bg-dark text-white">
+            <img src="./assets/images/Albion-Tools.png" class="card-img" />
+            <a href="google.com" target="#_target" class="card-img-overlay">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text">Last updated 3 mins ago</p>
+            </a>
+          </div>
+        </div>
+      </div>
       <div id="contact"></div>
     </main>
   </body>
@@ -86,4 +233,5 @@
     type="text/javascript"
     src="./assets/javascript/javascript.js"
   ></script>
+  <script type="text/javascript" src="./assets/javascript/popper.js"></script>
 </html>
